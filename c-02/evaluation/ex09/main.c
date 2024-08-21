@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:55:46 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/21 18:11:36 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/21 18:41:58 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	main(void)
 	str[16] = '4';
 	write(1, &str, 17);
 	write(1, " ", 1);
-	write(1, ft_strupcase(&str), 17);
+	write(1, ft_strcapitalize(&str), 17);
 	write(1, "\n", 1);
 	write(1, &str, 17);
 }
