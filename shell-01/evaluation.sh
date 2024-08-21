@@ -1,7 +1,6 @@
 echo "Correção - ex01"
 export FT_USER=bocal
 bash ex01/print_groups.sh
-echo "\n"
 echo " "
 echo "------------------------------------------------------------------------------------"
 echo "Correção - ex02"
