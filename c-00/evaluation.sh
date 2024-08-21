@@ -28,12 +28,12 @@ echo " "
 echo "------------------------------------------------------------------------------------"
 echo "Correção - ex05"
 cc -Wall -Wextra -Werror ex05/ft_print_comb.c ../evaluation/ex05/main.c
-./a.out
+./a.out | cat -e
 echo " "
 echo "------------------------------------------------------------------------------------"
 echo "Correção - ex06"
 cc -Wall -Wextra -Werror ex06/ft_print_comb2.c ../evaluation/ex06/main.c
-./a.out
+./a.out | cat -e
 echo " "
 echo "------------------------------------------------------------------------------------"
 echo "Correção - ex07"
@@ -43,4 +43,4 @@ echo " "
 echo "------------------------------------------------------------------------------------"
 echo "Correção - ex08"
 cc -Wall -Wextra -Werror ex08/ft_print_combn.c ../evaluation/ex08/main.c
-./a.out
+./a.out | cat -e
