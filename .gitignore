@@ -1,4 +1,3 @@
-.vscode
 !.gitignore
 shell-00/*
 !/shell-00/evaluation.sh
