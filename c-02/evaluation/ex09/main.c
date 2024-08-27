@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:55:46 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/27 16:03:15 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/27 17:53:14 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ int	main(void)
 	str[14] = 's';
 	str[15] = 'i';
 	str[16] = 'l';
-	write(1, &str, 18);
+	write(1, &str, 17);
 	write(1, " ", 1);
-	write(1, ft_strcapitalize(str), 18);
+	write(1, ft_strcapitalize(str), 17);
 	write(1, "\n", 1);
-	write(1, &str, 18);
+	write(1, &str, 17);
 	return (0);
 }

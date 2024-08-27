@@ -6,10 +6,11 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:35:19 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/27 16:02:58 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/27 17:53:30 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "ft_str_is_lowercase.h"
 
 int	main(void)
