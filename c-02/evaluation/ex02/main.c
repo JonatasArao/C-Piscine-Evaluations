@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:35:32 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/27 16:02:51 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/27 18:16:56 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	main(void)
 		write(1, "Y", 1);
 	else
 		write(1, "N", 1);
+	str2[0] = '\0';
 	if (ft_str_is_alpha(str2) == 1)
 		write(1, "Y", 1);
 	else
