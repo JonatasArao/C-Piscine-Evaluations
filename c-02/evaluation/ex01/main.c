@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:30:52 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/28 09:35:50 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/28 09:38:50 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ int	main(void)
 	str2[7] = '4';
 	str2[8] = '2';
 	str2[9] = '\0';
-	printf("%s , %s => %s\n", str, str2, ft_strncpy(str2, str, 8));
+	printf("%s, %s ", str, str2);
+	printf("=> %s\n", ft_strncpy(str2, str, 8));
 	printf("%s\n", str2);
 	return (0);
 }

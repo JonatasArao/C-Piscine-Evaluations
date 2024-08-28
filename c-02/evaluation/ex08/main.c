@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:55:46 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/28 09:30:11 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/28 09:37:34 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	main(void)
 	str[4] = 'I';
 	str[5] = 'N';
 	str[6] = 'A';
-	str[6] = '\0';
+	str[7] = '\0';
 	write(1, &str, 7);
 	write(1, " ", 1);
 	write(1, ft_strlowcase(str), 7);
