@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:35:19 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/27 18:17:18 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/28 09:28:52 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ int	main(void)
 	str[1] = 'i';
 	str[2] = 's';
 	str[3] = 'c';
-	str[4] = 'i';
-	str[5] = 'n';
-	str[6] = 'a';
+	str[4] = 'n';
+	str[5] = 'a';
+	str[6] = '\0';
 	if (ft_str_is_lowercase(str) == 1)
 		write(1, "Y", 1);
 	else

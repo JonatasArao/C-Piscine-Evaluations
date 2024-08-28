@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:55:46 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/27 16:03:17 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/28 09:31:01 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	ft_putnbr(int nb)
 
 int	main(void)
 {
-	char	str[10];
+	char	str[11];
 	char	str2[8];
 
 	str[0] = 'P';
@@ -54,7 +54,8 @@ int	main(void)
 	str[7] = ' ';
 	str[8] = '4';
 	str[9] = '2';
-	write(1, &str, 10);
+	str[10] = '\0';
+	write(1, &str, 11);
 	write(1, "\n", 1);
 	ft_putnbr(ft_strlcpy(str2, str, 8));
 	write(1, "\n", 1);

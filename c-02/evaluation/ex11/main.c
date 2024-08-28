@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:55:46 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/27 16:03:20 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/28 09:22:34 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	main(void)
 {
-	char	str[16];
+	char	str[17];
 
 	str[0] = 'P';
 	str[1] = 'I';
@@ -31,8 +31,9 @@ int	main(void)
 	str[11] = 'S';
 	str[12] = 'P';
 	str[13] = '!';
-	str[15] = 127;
-	str[14] = '\v';
+	str[14] = 127;
+	str[15] = '\v';
+	str[16] = '\0';
 	write(1, &str, 16);
 	write(1, "\n", 1);
 	ft_putstr_non_printable(str);

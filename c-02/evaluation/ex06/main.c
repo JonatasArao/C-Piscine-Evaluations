@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:39:03 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/27 18:17:30 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/28 09:29:37 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ int	main(void)
 	str[1] = 'I';
 	str[2] = 'S';
 	str[3] = 'C';
-	str[4] = 'I';
-	str[5] = 'N';
-	str[6] = 'A';
+	str[4] = 'N';
+	str[5] = 'A';
+	str[6] = '\0';
 	if (ft_str_is_printable(str) == 1)
 		write(1, "Y", 1);
 	else
