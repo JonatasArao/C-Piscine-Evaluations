@@ -6,7 +6,7 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:13:41 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/31 19:57:44 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/31 20:01:26 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,19 +37,19 @@ int	main(void)
 	ft_strcpy(str, "Piscina 42 Sao Paulo");
 	ft_strcpy(str2, "42");
 	printf("str = %s\tstr2 = %s\n", str, str2);
-	substr = strstr(str, str2);
+	substr = ft_strstr(str, str2);
 	if (substr)
 		printf("%s encontrado em %s\n", str2, substr);
 	else
 		printf("%s não encontrado\n", str2);
 	ft_strcpy(str2, "SP");
 	printf("str = %s\tstr2 = %s\n", str, str2);
-	substr = strstr(str, str2);
+	substr = ft_strstr(str, str2);
 	if (substr)
 		printf("%s encontrado em %s\n", str2, substr);
 	else
 		printf("%s não encontrado\n", str2);
-	substr = strstr(str, "");
+	substr = ft_strstr(str, "");
 	if (substr)
 		printf("%s encontrado em %s\n", "Vazio", substr);
 	else
