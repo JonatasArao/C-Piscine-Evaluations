@@ -6,36 +6,34 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:55:46 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/28 09:31:13 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/31 16:52:49 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_print_memory.h"
+#include <stdio.h>
+#include <unistd.h>
+
+void	*ft_print_memory(void *addr, unsigned int size);
 
 int	main(void)
 {
-	char	str[18];
-	int		temp;
+	char	str[0xFF + 10];
+	int		index;
 
-	str[0] = 'P';
-	str[1] = 'I';
-	str[2] = 'S';
-	str[3] = 'C';
-	str[4] = '!';
-	str[5] = 'N';
-	str[6] = 'A';
-	str[7] = '2';
-	str[8] = '4';
-	str[9] = '2';
-	str[10] = '\n';
-	str[11] = 'S';
-	str[12] = 'P';
-	str[13] = '\t';
-	str[14] = '2';
-	str[15] = '\0';
-	str[16] = '2';
-	str[17] = '4';
-	temp = 123;
-	ft_print_memory(&str, 18);
-	return (0);
+	index = 0;
+	while (index <= 0xFF)
+	{
+		str[index] = index;
+		index = index + 1;
+	}
+	str[index] = 0;
+
+	index = 0;
+	while (index < 30)
+	{
+		ft_print_memory((void *)str, index);
+		index = index + 1;
+	}
+
+	ft_print_memory((void *)str, 0x101);
 }

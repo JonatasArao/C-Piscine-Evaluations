@@ -6,38 +6,39 @@
 /*   By: jarao-de <jarao-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 10:55:46 by jarao-de          #+#    #+#             */
-/*   Updated: 2024/08/28 09:30:51 by jarao-de         ###   ########.fr       */
+/*   Updated: 2024/08/31 16:52:00 by jarao-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "ft_strcapitalize.h"
+
+char	*ft_strcapitalize(char *str);
+
+char	*ft_strcpy(char *dest, char *src)
+{
+	int	index;
+
+	index = 0;
+	while (src[index] != '\0')
+	{
+		dest[index] = src[index];
+		index = index + 1;
+	}
+	dest[index] = '\0';
+	return (dest);
+}
 
 int	main(void)
 {
-	char	str[17];
+	char	str[56];
 
-	str[0] = 'p';
-	str[1] = '1';
-	str[2] = 'S';
-	str[3] = 'C';
-	str[4] = '!';
-	str[5] = 'n';
-	str[6] = 'a';
-	str[7] = '-';
-	str[8] = 's';
-	str[9] = 'p';
-	str[10] = ';';
-	str[11] = 'b';
-	str[12] = ' ';
-	str[13] = 's';
-	str[14] = 'i';
-	str[15] = 'l';
-	str[16] = '\0';
-	write(1, &str, 17);
-	write(1, " ", 1);
-	write(1, ft_strcapitalize(str), 17);
+	ft_strcpy(str, "oi, tudo bem? 42palavras quarenta-e-duas; cinquenta+e+um");
+	write(1, "str: ", 5);
+	write(1, &str, 56);
 	write(1, "\n", 1);
-	write(1, &str, 17);
-	return (0);
+	write(1, "Retorno: ", 9);
+	write(1, ft_strcapitalize(str), 56);
+	write(1, "\n", 1);
+	write(1, "str: ", 5);
+	write(1, &str, 56);
 }
